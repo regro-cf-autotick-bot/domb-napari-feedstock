@@ -1,5 +1,5 @@
 {% set name = "domb-napari" %}
-{% set version = "2023.11.10" %}
+{% set version = "2024.2.29" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/domb-napari-{{ version }}.tar.gz
-  sha256: 96cb0c215f738dcf59b60458f44366dd58ad8f8fec9c643d0abc617ad80acb32
+  sha256: 685207db9ac5607a2d6d9b6290fe2cb75115167c112a98e79253860adbfcdba2
 
 build:
   noarch: python
