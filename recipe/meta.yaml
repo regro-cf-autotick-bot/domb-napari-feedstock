@@ -25,6 +25,7 @@ requirements:
     - matplotlib-base
     - napari
     - numpy
+    - plotly
     - python >=3.8
     - scikit-image
     - scipy
