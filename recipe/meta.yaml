@@ -6,7 +6,7 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/domb-napari-{{ version }}.tar.gz
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/domb_napari-{{ version }}.tar.gz
   sha256: 33553b0edb98624dd7e7cdb026a5d120b72d122c083c1bbc78b27f97a9c6f3fe
 
 build:
