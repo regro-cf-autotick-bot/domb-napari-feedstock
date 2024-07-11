@@ -1,13 +1,13 @@
 {% set name = "domb-napari" %}
-{% set version = "2023.11.10" %}
+{% set version = "0.2.0" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/domb-napari-{{ version }}.tar.gz
-  sha256: 96cb0c215f738dcf59b60458f44366dd58ad8f8fec9c643d0abc617ad80acb32
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/domb_napari-{{ version }}.tar.gz
+  sha256: 33553b0edb98624dd7e7cdb026a5d120b72d122c083c1bbc78b27f97a9c6f3fe
 
 build:
   noarch: python
@@ -17,12 +17,19 @@ build:
 requirements:
   host:
     - pip
-    - python >=3.9
+    - python >=3.8
     - setuptools
   run:
+    - dipy
     - domb
+    - matplotlib-base
     - napari
-    - python >=3.9
+    - numpy
+    - plotly
+    - python >=3.8
+    - scikit-image
+    - scipy
+    - vispy
 
 test:
   imports:
